@@ -3,45 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Our Free Telegram Course Group</title>
+    <title>Live Profit - Join for Free Signals</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-image: url('https://source.unsplash.com/1600x900/?finance,trade'); /* Nice background */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             text-align: center;
             margin: 0;
             padding: 0;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
         }
-        h1 {
-            color: #2c3e50;
-            margin-top: 20px;
+        .banner {
+            background-color: rgba(0, 123, 255, 0.8);
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 20px;
+            animation: fadeIn 2s;
+        }
+        .headline {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            animation: fadeIn 2s;
+        }
+        .subheading {
+            font-size: 20px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s;
         }
         .image-container {
-            margin-top: 50px;
+            margin-bottom: 20px;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Profile shape */
+            border: 5px solid white;
         }
         .button {
-            background-color: #3498db;
+            background-color: #ff5722;
             color: white;
-            padding: 15px 30px;
+            padding: 12px 25px;
             font-size: 18px;
             text-decoration: none;
             border-radius: 5px;
-            display: inline-block;
-            margin-top: 30px;
-            animation: bounce 1s infinite;
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
+            animation: bounce 1s infinite;
         }
         .button:hover {
-            background-color: #2980b9;
+            background-color: #e64a19;
         }
-        /* Animation for button */
+        .telegram-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
         @keyframes bounce {
             0%, 100% {
                 transform: translateY(0);
@@ -50,32 +78,25 @@
                 transform: translateY(-10px);
             }
         }
-        .telegram-icon {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
-        }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 20px;
-            }
-            .button {
-                padding: 12px 20px;
-                font-size: 16px;
-            }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
-    <h1>Join Our Free Telegram Course Group</h1>
-    <div class="image-container">
-        <img src="https://github.com/soleeb/tradewithshuvro/blob/main/ksjdfhksjd.jpeg?raw=true" alt="Trading Course Image">
-    </div>
+    <div class="banner">🚀 FREE Signals 📈</div>
     
-    <!-- Call to Action Button with Telegram Icon -->
+    <div class="headline">💰 Live Profit 💰</div>
+    <div class="subheading">📊 Earn More In Live Class 🎓</div>
+
+    <div class="image-container">
+        <img class="profile-image" src="https://github.com/soleeb/tradewithshuvro/blob/main/ksjdfhksjd%20(3).jpeg?raw=true" alt="Trading Profile Image">
+    </div>
+
     <a class="button" href="https://t.me/QuotexShuvro">
         <img class="telegram-icon" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon">
-        Join Now for Free
+        Join Now for Free 🚀
     </a>
 
     <script>
