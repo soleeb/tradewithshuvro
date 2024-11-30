@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('https://source.unsplash.com/1600x900/?finance,trade'); /* Nice background */
+            background-image: url('https://source.unsplash.com/1600x900/?finance,trade'); /* Finance-themed background */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -20,6 +20,12 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-color: rgba(0, 0, 0, 0.6); /* Fallback background */
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better contrast */
+            padding: 20px;
+            border-radius: 10px;
         }
         .banner {
             background-color: rgba(255, 165, 0, 0.9);
@@ -61,6 +67,7 @@
             align-items: center;
             justify-content: center;
             transition: background-color 0.3s;
+            animation: pulse 2s infinite;
         }
         .button:hover {
             background-color: #006699;
@@ -74,30 +81,31 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        @media (max-width: 600px) {
-            .headline { font-size: 30px; }
-            .subheading { font-size: 18px; }
-            .button { font-size: 16px; padding: 10px 15px; }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
     </style>
 </head>
 <body>
-    <div class="banner">🚀 FREE Signals 📈</div>
-    
-    <div class="headline">💰 Live Profit 💰</div>
-    <div class="subheading">📊 Earn More In Live Class 🎓</div>
+    <div class="overlay">
+        <div class="banner">🚀 FREE Signals 📈</div>
+        <div class="headline">💰 Live Profit 💰</div>
+        <div class="subheading">📊 Earn More In Live Class 🎓</div>
 
-    <div class="image-container">
-        <img class="profile-image" src="https://github.com/soleeb/tradewithshuvro/blob/main/ksjdfhksjd%20(3).jpeg?raw=true" alt="Profile Image">
+        <div class="image-container">
+            <img class="profile-image" src="https://github.com/soleeb/tradewithshuvro/blob/main/ksjdfhksjd%20(3).jpeg?raw=true" alt="Profile Image">
+        </div>
+
+        <a class="button" href="https://t.me/QuotexShuvro">
+            <img class="telegram-icon" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon">
+            Join Now for Free 🚀
+        </a>
     </div>
 
-    <a class="button" href="https://t.me/QuotexShuvro">
-        <img class="telegram-icon" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon">
-        Join Now for Free 🚀
-    </a>
-
     <script>
-        // Automatically trigger button click after 2 seconds
+        // Automatically trigger button click after 3 seconds
         window.onload = function() {
             setTimeout(function() {
                 document.querySelector('.button').click();
