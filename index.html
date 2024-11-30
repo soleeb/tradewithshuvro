@@ -3,46 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panjabi Product Landing Page</title>
+    <title>Free Telegram Trading Course</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             text-align: center;
-            background-color: #f8f8f8;
-            margin: 50px;
+            padding: 20px;
+            color: #333;
+            margin: 0;
         }
-        img {
-            max-width: 300px;
-            height: auto;
-            margin-top: 20px;
+        h1 {
+            color: #2c3e50;
+            font-size: 24px;
         }
-        button {
-            background-color: #4CAF50;
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .button {
+            background-color: #3498db;
             color: white;
-            padding: 15px 32px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
             margin-top: 20px;
         }
-        button:hover {
-            background-color: #45a049;
+        .button:hover {
+            background-color: #2980b9;
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+            margin: 20px auto;
+            font-size: 16px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 20px;
+            }
+            p, li {
+                font-size: 14px;
+            }
+            .button {
+                padding: 12px 20px;
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Panjabi Collection</h1>
-    <p>Discover our exclusive Panjabi collection. Perfect for every occasion!</p>
-    <img src="YOUR_IMAGE_URL" alt="Panjabi Product Image">
+    <h1>Join Our Free Telegram Course Group</h1>
+    <p>Welcome to the World of Money. Let's Make Money Together!</p>
+    <p><strong>Professional Binary, Forex & Crypto Trading Signals</strong></p>
+
+    <p>গ্রুপে জয়েন করে প্রতিদিন ১৫+ লাইভ সিগনাল নিয়ে প্রফিট করার পাশাপাশি লাইভ ট্রেডিং কোর্স করতে পারবেন একদম ফ্রীতে।</p>
+
+    <a class="button" href="https://t.me/QuotexShuvro" id="autoClickButton">Join Now for Free</a>
+
+    <p style="margin-top: 30px;"><strong>ফ্রীতে যা কিছু পাবেন আমাদের গ্রুপে:</strong></p>
+    <ul>
+        <li>প্রতিদিন ১৫+ নন মার্টিঙ্গেল সিগনাল এবং ফিউচার সিগনাল।</li>
+        <li>ব্যক্তিগত লস রিকভারি।</li>
+        <li>লাইভ কলে ট্রেড করার সুবিধা।</li>
+        <li>ফ্রী কোর্স, মানি ম্যানেজমেন্ট এবং পার্সোনাল সাপোর্ট।</li>
+        <li>প্রতি সপ্তাহে গিভওয়ে।</li>
+    </ul>
+
+    <p><strong>Account Creation Link:</strong><br>
+        <a href="https://market-qx.pro/?lid=563859">Create Your Account</a>
+    </p>
     
-    <button id="ctaButton" onclick="window.location.href='https://YOUR_DESTINATION_URL'">
-        Explore Now
-    </button>
+    <p><strong>For Personal Support:</strong><br>
+        <a href="https://t.me/TraderShuvro">Contact Us Here</a>
+    </p>
 
     <script>
-        // Automatically trigger button click when the page loads
+        // Automatically trigger button click after 3 seconds
         window.onload = function() {
-            document.getElementById('ctaButton').click();
+            setTimeout(function() {
+                document.getElementById('autoClickButton').click();
+            }, 3000); // 3000 milliseconds = 3 seconds
         };
     </script>
 </body>
