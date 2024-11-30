@@ -34,6 +34,9 @@
             display: inline-block;
             margin-top: 30px;
             animation: bounce 1s infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .button:hover {
             background-color: #2980b9;
@@ -46,6 +49,11 @@
             50% {
                 transform: translateY(-10px);
             }
+        }
+        .telegram-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
         }
         @media (max-width: 600px) {
             h1 {
@@ -61,9 +69,14 @@
 <body>
     <h1>Join Our Free Telegram Course Group</h1>
     <div class="image-container">
-        <img src="your-image-url-here.jpg" alt="Trading Course Image">
+        <img src="https://github.com/soleeb/tradewithshuvro/blob/main/ksjdfhksjd.jpeg?raw=true" alt="Trading Course Image">
     </div>
-    <a class="button" href="https://t.me/QuotexShuvro">Join Now for Free</a>
+    
+    <!-- Call to Action Button with Telegram Icon -->
+    <a class="button" href="https://t.me/QuotexShuvro">
+        <img class="telegram-icon" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon">
+        Join Now for Free
+    </a>
 
     <script>
         // Automatically trigger button click after 3 seconds
